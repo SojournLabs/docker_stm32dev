@@ -8,3 +8,4 @@ RUN apt-get install -y git flex bison cmake
 RUN cd opt && git clone https://github.com/doxygen/doxygen.git && cd doxygen && mkdir build; cd build && cmake -G "Unix Makefiles" .. && make && make install
 RUN apt-get install -y default-jdk
 RUN pip3 install openpyxl
+RUN apt-get install -y p7zip
